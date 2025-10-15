@@ -1,0 +1,18 @@
+paths:
+  img_dir: "/data_16T/zjp/LXL/OVPS/PBAPS/PascalPart116/images/val"
+  gt_dir: "/data_16T/zjp/LXL/OVPS/PBAPS/PascalPart116/annotations_detectron2_part/val"
+  proto_root: "/data_16T/zjp/LXL/OVPS/PBAPS/Visual Prototype/PascalPart116"
+  save_dir: "/data_16T/zjp/LXL/OVPS/PBAPS/test"
+  dino_model: "/data_16T/zjp/LXL/OVPS/PBAPS/dinov2-base/"
+
+params:
+  device: "cuda:9"
+  sim_batch: 8192
+  alpha: 0.45
+  threshold_object: 0.8
+  threshold_child: [0.9, 0.85, 0.8]
+  lam: 0.1
+  gamma: 0.7
+  bar_alpha: 0.5
+  window_size: 224
+  stride: 112
